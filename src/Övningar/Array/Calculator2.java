@@ -1,5 +1,5 @@
 package Övningar.Array;
-
+//GitHub test
 public class Calculator2 {
 
     char[] operators = {'+', '-', '*', '/'}; //Deklarerar en array som innehåller 4 räknesätt.
