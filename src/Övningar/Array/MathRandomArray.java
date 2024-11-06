@@ -21,9 +21,6 @@ public class MathRandomArray {
         System.out.println();
 
 
-
-
-
         //Skapa en metod i en annan klass som du kallar RandomGenerator som returnerar 10 slumptal från 1-100 i en array
         //Skapa ett objekt som anropar metoden randomArray i klassen RandomGenerator
         RandomGenerator generator = new RandomGenerator();
@@ -32,9 +29,6 @@ public class MathRandomArray {
             System.out.println(newArray[i]);
         }
         System.out.println();
-
-
-
 
 
         //Skapa en metod i klassen RandomGenerator som returnerar slumptal från 1-100 i en array.

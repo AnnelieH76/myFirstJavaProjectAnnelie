@@ -1,36 +1,43 @@
 package Övningar.KlasserObjekt;
 
-public class Calculator
-{
+
+public class Calculator {
     //Attribut
     private double a;
     private double b;
 
 
-    public Calculator(int inputA, int inputB) //Konstruktor
-    {
+    public Calculator(int inputA, int inputB){ //Konstruktor
         this.a = inputA;
         this.b = inputB;
     }
 
-    public double add()//Metod som är publik, intigern add returnera summan.
-    {
-        return this.a+this.b;
+    public double add(){//Metod som är publik, intigern add returnera summan.
+        return this.a + this.b;
     }
 
-    public double sub() //Publik metod med intiger sub som returnerar differensen
-    {
-        return a-b;
+    public double sub(){ //Publik metod med intiger sub som returnerar differensen
+        return a - b;
     }
 
-    public double div()
-    {
-        return a/b;
+    public double div() {
+        return a / b;
     }
 
-    public double mult()
-    {
-    return a*b;
+    public double mult() {
+        return a * b;
+    }
+
+    public int seil(){
+        return (int) Math.ceil(a/b);
+    }
+
+    public double max(){
+        return Math.max(a,b);
+    }
+
+    public int floor(){
+        return (int) Math.floor(a/b);
     }
 
 }

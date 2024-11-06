@@ -2,7 +2,7 @@ package Övningar.KlasserObjekt;
 
 import java.util.Scanner;
 
-public class myCalculator
+public class CalculatorMain
 {
     public static void main(String[] args)
     {
@@ -21,6 +21,9 @@ public class myCalculator
             System.out.println("Differensen blir " + myCalculator.sub());
             System.out.println("Kvoten blir " + myCalculator.div());
             System.out.println("Produkten blir " + myCalculator.mult());
+            System.out.println("Differensen avrundat uppåt blir: " + myCalculator.seil());
+            System.out.println("Differensen avrundat uppåt blir: " + myCalculator.floor());
+            System.out.println("Det största talet är: " + myCalculator.max());
         }
 
     }
