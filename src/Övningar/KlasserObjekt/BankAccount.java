@@ -31,3 +31,5 @@ public class BankAccount
 //Utöka programmet så att man kan bestämma 	ett nytt värde för saldo
 //Utöka programmet så att man kan lägga till och ta bort en viss summa ifrån saldot
 //Utöka programmet så att man aldrig kan få ett saldo som är mindre än 0 kronor
+
+//I BankAccount gör static attribut på Banknamnet och ränta. Och om ni vill räkna ut räntan på kontot vid årets slut.

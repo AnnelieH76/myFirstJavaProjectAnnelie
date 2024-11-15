@@ -1,4 +1,4 @@
-package Inlämningsuppgift_Annelie_Hagen;
+package Inlämningsuppgift;
 
 import java.util.ArrayList;
 

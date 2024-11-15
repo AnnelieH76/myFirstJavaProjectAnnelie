@@ -1,11 +1,10 @@
 package Övningar.KlasserObjekt;
+
 import java.util.Scanner;
 
-public class MyBankAccount
-{
-    public static void main(String[] args)
-    {
-       Scanner scanner = new Scanner(System.in);
+public class BankAccountMain {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Vad vill du göra? ");
         System.out.println("1 Bestämma mitt saldo");
         System.out.println("2 Se saldo");
@@ -16,47 +15,39 @@ public class MyBankAccount
         BankAccount myAccount = new BankAccount();
 
         int val;
-        do
-        {
-            val= scanner.nextInt();
-            if(val ==1)
-            {
+        do {
+            val = scanner.nextInt();
+            if (val == 1) {
                 System.out.println("Vilket saldo har du? ");
                 int saldo = scanner.nextInt();
                 myAccount.setSaldo(saldo);
             }
 
-            if(val==2)
-            {
+            if (val == 2) {
                 System.out.println("Ditt saldo är: " + myAccount.getSaldo());
             }
 
-            if(val==3)
-            {
+            if (val == 3) {
                 System.out.println("Hur mycket vill du ta ut? ");
                 int belopp = scanner.nextInt();
 
-                if (belopp>myAccount.saldo)
-                {
+                if (belopp > myAccount.saldo) {
                     System.out.println("Beloppet är för stort");
-                }
-                else
-                {
+                } else {
                     myAccount.withdraw(belopp);
                     System.out.println("Ditt saldo är nu: " + myAccount.getSaldo());
                 }
             }
 
-            if(val==4)
-            {
+            if (val == 4) {
                 System.out.println("Hur mycket vill du sätta in? ");
-                int belopp =scanner.nextInt();
+                int belopp = scanner.nextInt();
                 myAccount.deposit(belopp);
                 System.out.println("Ditt saldo är nu: " + myAccount.getSaldo());
             }
 
         }
-        while (val!=5);
+        while (val != 5);
 
     }
 }

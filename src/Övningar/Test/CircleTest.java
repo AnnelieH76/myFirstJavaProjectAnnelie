@@ -10,7 +10,7 @@ public class CircleTest
     {
         Circle circle = new Circle(5);  // Skapa ett Circle-objekt
         double expected = 5 * 5 * 3.14;
-        double actual = circle.calculateArea();  // Anta att metoden heter calculateArea
+        double actual = circle.calculateArea();  // Metoden heter calculateArea
         assertEquals(expected, actual, 0.01);  // Lägg till en tolerans på 0.01
     }
 
