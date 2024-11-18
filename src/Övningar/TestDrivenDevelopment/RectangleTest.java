@@ -1,4 +1,4 @@
-package Övningar.Test;
+package Övningar.TestDrivenDevelopment;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;

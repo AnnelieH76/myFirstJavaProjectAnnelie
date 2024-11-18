@@ -1,4 +1,4 @@
-package Övningar.Test;
+package Övningar.TestDrivenDevelopment;
 
 import org.junit.jupiter.api.Test;
 //Importerar @Test-annoteringen från JUnit 5,

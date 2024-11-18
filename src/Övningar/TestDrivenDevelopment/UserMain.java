@@ -1,6 +1,5 @@
-package Övningar.Test;
+package Övningar.TestDrivenDevelopment;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class UserMain {
