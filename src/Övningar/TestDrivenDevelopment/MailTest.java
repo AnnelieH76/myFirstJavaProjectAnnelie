@@ -1,32 +1,46 @@
 package Övningar.TestDrivenDevelopment;
 
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 /*
+
+
 public class MailTest {
+
     @Test
-    void containsAt(){
+    public void testAddValidEmail() {
         Mail mail = new Mail();
-        char expected = '@';
-        char actual = mail.atExists();
-        assertEquals(expected, actual);
+        boolean email = mail.containsAt("test@example.com");
+        assertEquals(true, email );
     }
 
+    @Test
+    public void testRejectInvalidEmail() {
+        Mail mail = new Mail();
+        boolean result = mail.addEmail("invalid-email");  // Testar en ogiltig e-post
+        assertEquals(false, result);  // Kontrollera att resultatet är false
+        assertEquals(0, mail.getEmailCount());  // Kontrollera att ingen e-post har lagts till
+    }
 
+    @Test
+    public void testReplaceFirstEmailWhenFull() {
+        Mail mail = new Mail();
+        mail.addEmail("email1@example.com");
+        mail.addEmail("email2@example.com");
+        mail.addEmail("email3@example.com");
+        mail.addEmail("email4@example.com");
 
+        // Nu är listan full, den första e-posten ska ersättas
+        boolean result = mail.addEmail("email5@example.com");
 
+        assertEquals(true, result);  // Kontrollera att resultatet är true
+        assertEquals(4, mail.getEmailCount());  // Kontrollera att vi har 4 e-postadresser
+        // Kontrollera att den första e-posten har ersatts korrekt
+        assertEquals("email2@example.com", mail.getEmails()[0]);
+        assertEquals("email3@example.com", mail.getEmails()[1]);
+        assertEquals("email4@example.com", mail.getEmails()[2]);
+        assertEquals("email5@example.com", mail.getEmails()[3]);
+    }
 }
 
-/*
-En User kan lägga till en e-mail och det går även att kolla upp vilken e-mail en användare har registrerad.​
-En User kan ha upp till 4 e-mail lagrade i en String-Array (String[]).
-Om fler än 4 e-mail läggs till så ersätts den första e-postadressen med den man försöker lägga till.​
-En e-mail måste innehålla tecknet @.
-En User kan inte lägga till en email som redan finns registrerad
-En User kan ta bort en email
-En User kan fråga hur många email de har lagrade
  */
-
-
-
-
-

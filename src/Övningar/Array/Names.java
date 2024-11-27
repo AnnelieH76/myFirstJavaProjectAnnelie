@@ -15,7 +15,6 @@ public class Names {
             System.out.println(firstname[i]);
         }
 
-
         //När du vill lägga in namn efter hand
         String[] lastname = new String[5];
         lastname[0] = "Andersson";
@@ -30,16 +29,10 @@ public class Names {
             System.out.println(lastname[i]);
         }
 
-
-        //Splitta textrad till array med ord
-        String myString = "Hej på dig ";
-        String[] stringArray =myString.split(" ");
-        for(int i = 0; i<3; i++){
-            System.out.println(stringArray[i]);
-        }
+        String[] myString = {"Hej på dig "};
 
         //Skriv ut "Hej på dig Annelie Hagen! Vad snygg du är idag."
-        System.out.println(myString +(firstname [1]) + " " + (lastname[4]) +"! Vad snygg du är idag.");
+        System.out.println(myString[0] +(firstname [1]) + " " + (lastname[4]) +"! Vad snygg du är idag.");
 
     }
 }

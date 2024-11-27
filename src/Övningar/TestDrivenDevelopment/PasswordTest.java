@@ -6,6 +6,20 @@ import static org.junit.Assert.assertEquals;
 public class PasswordTest {
 
     @Test
+    public void testHasNoSpecials()
+    {
+        //Arrange
+        Password pass = new Password();
+        boolean expected = false;
+
+        //Act
+        boolean actual = pass.check("NoSpecials1");
+
+        //Assert
+        assertEquals(expected, actual);
+    }
+
+    @Test
     public void testValidPassword()
     {
         //Arrange: Skapar en instans/nytt objekt
@@ -40,20 +54,6 @@ public class PasswordTest {
 
         //Act
         boolean actual = pass.check("NoDigits#");
-
-        //Assert
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void testNoSpecialCharacters()
-    {
-        //Arrange
-        Password pass = new Password();
-        boolean expected = false;
-
-        //Act
-        boolean actual = pass.check("NoSpecials1");
 
         //Assert
         assertEquals(expected, actual);

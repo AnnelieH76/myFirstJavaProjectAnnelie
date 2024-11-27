@@ -8,7 +8,7 @@ public class Solidus {
     private int sticker;
 
     public Solidus() {
-        this.solidus = 5;
+        this.solidus = 5; //Startvärde på saldot
         this.hoddie = 20;
         this.tshirt = 15;
         this.sticker = 5;
