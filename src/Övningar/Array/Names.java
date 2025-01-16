@@ -30,9 +30,17 @@ public class Names {
         }
 
         String[] myString = {"Hej på dig "};
-
         //Skriv ut "Hej på dig Annelie Hagen! Vad snygg du är idag."
         System.out.println(myString[0] +(firstname [1]) + " " + (lastname[4]) +"! Vad snygg du är idag.");
+
+
+
+        String myMessage = "hej på dig";
+        String[]stringArray = myMessage.split(" ");
+
+        for(int i = 0; i<3; i++){
+            System.out.println(stringArray[i]);
+        }
 
     }
 }
