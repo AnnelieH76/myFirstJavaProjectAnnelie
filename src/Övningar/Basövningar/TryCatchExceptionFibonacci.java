@@ -10,7 +10,7 @@ public class TryCatchExceptionFibonacci {
         while (incorrectFibonacci) {
 
             Scanner scan = new Scanner(System.in);
-            System.out.println("Write a number between 1-40: ");
+            System.out.println("Pleace write a number between 1-40: ");
             try {
                 int number = Integer.parseInt(scan.nextLine());
                 int[] fibonacci = new int[40];
