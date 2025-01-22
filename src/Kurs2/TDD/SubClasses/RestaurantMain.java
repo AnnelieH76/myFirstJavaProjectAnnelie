@@ -37,7 +37,6 @@ public class RestaurantMain {
         }
 
         System.out.println("The total price is: " + totalPrice);
-
     }
 }
 

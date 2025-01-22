@@ -9,7 +9,5 @@ public class ZooMain {
         CatSubClass c = new CatSubClass();
         c.mew();
         c.eat();
-
-
     }
 }

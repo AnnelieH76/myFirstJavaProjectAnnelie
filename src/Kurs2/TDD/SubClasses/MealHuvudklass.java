@@ -17,4 +17,5 @@ public class MealHuvudklass {
     public int getPrice(){
         return price;
     }
+
 }

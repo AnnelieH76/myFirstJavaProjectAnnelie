@@ -19,5 +19,6 @@ public class IceCreamSubClass extends MealHuvudklass {
         System.out.println("Adding sprinkles");
         price += 5;
     }
+
 }
 

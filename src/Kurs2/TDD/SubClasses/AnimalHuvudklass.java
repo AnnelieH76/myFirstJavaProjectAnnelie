@@ -4,4 +4,5 @@ public class AnimalHuvudklass {
     public void eat(){
         System.out.println("Eating...");
     }
+
 }

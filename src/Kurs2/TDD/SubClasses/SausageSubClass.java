@@ -21,5 +21,4 @@ public class SausageSubClass extends MealHuvudklass {
         System.out.println("Adding ketchup");
         price += 2;
     }
-
 }

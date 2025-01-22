@@ -1,5 +1,4 @@
 package Övningar.Basövningar;
-
 import java.util.Scanner;
 
 public class TryCatchExceptionFibonacci {
