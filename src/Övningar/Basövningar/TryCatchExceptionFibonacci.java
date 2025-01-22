@@ -26,17 +26,17 @@ public class TryCatchExceptionFibonacci {
 
             } catch (ArrayIndexOutOfBoundsException e) {
                 incorrectFibonacci =true;
-                System.out.println("You must write a number >1 and <=40");
+                System.out.println("You must write a number >1 and <=40.");
             } catch (NumberFormatException e) {
                 incorrectFibonacci =true;
-                System.out.println("You must write a number between 1-40, not decimals, letters or characters");
+                System.out.println("You must write a number between 1-40, not decimals, letters or characters.");
             } catch (Exception e) {
                 incorrectFibonacci =true;
-                System.out.println("You must write a number between 1-40");
+                System.out.println("You must write a number between 1-40.");
             }
         }
     }
 }
 
 
-// Värden som får programmet att krascha: -1, 0, 1.2, 41, #, a, fem, 3.0, endast enter
+// Värden som fick programmet att krascha: -1, 0, 1.2, 41, #, a, fem, 3.0, endast enter.
