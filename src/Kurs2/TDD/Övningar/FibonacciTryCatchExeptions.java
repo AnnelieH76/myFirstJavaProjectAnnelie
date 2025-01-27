@@ -1,11 +1,12 @@
-package Övningar.Basövningar;
+package Kurs2.TDD.Övningar;
+
 import java.util.Scanner;
 
-public class TryCatchExceptionFibonacci {
+public class FibonacciTryCatchExeptions {
 
     public static void main(String[] args) {
 
-        boolean incorrectFibonacci =true;
+        boolean incorrectFibonacci = true;
 
         while (incorrectFibonacci) {
 
@@ -21,16 +22,16 @@ public class TryCatchExceptionFibonacci {
                     fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
                 }
                 System.out.println("Number " + number + " corresponds to Fibonacci: " + (fibonacci[number - 1]));
-                incorrectFibonacci =false;
+                incorrectFibonacci = false;
 
             } catch (ArrayIndexOutOfBoundsException e) {
-                incorrectFibonacci =true;
+                incorrectFibonacci = true;
                 System.out.println("You must write a number >1 and <=40.");
             } catch (NumberFormatException e) {
-                incorrectFibonacci =true;
+                incorrectFibonacci = true;
                 System.out.println("You must write a number between 1-40, not decimals, letters or characters.");
             } catch (Exception e) {
-                incorrectFibonacci =true;
+                incorrectFibonacci = true;
                 System.out.println("You must write a number between 1-40.");
             }
         }
@@ -38,4 +39,4 @@ public class TryCatchExceptionFibonacci {
 }
 
 
-// Värden som fick programmet att krascha: -1, 0, 1.2, 41, #, a, fem, 3.0, endast enter.
+

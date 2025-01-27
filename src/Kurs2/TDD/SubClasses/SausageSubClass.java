@@ -2,8 +2,6 @@ package Kurs2.TDD.SubClasses;
 
 public class SausageSubClass extends MealHuvudklass {
 
-
-
     public SausageSubClass(){
         price = 15;
     }

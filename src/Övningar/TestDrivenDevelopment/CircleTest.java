@@ -1,10 +1,10 @@
 package Övningar.TestDrivenDevelopment;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CircleTest {
+
     @Test
     void area1() {
         Circle circle = new Circle(5);  // Skapa ett Circle-objekt
