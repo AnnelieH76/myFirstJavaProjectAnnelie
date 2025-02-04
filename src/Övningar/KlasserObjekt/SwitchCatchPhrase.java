@@ -1,6 +1,6 @@
 package Övningar.KlasserObjekt;
 
-public class SwitchMetod {
+public class SwitchCatchPhrase {
 
     public void catchPhrase(int number) {
 

@@ -4,25 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Code {
+    private static final Map<Character, String> morseCodeMap = new HashMap<>();
 
-    // Skapa en HashMap för morsekod
-    Map<Character, String> morseCodeMap = new HashMap<>();
-
-    public Code() {
-        morseCodeMap.put('M', "--");
-
-        public String getMorseCode ( char letter){
-            return morseCodeMap.get(letter, " ");
-        }
-
-    }
-}
-
- /*
-        // Skapa en HashMap för morsekod
-        Map<Character, String> morseCodeMap = new HashMap<>();
-
-        // Lägg till bokstäverna A-Z och deras motsvarande morsekod
+    static {
         morseCodeMap.put('A', ".-");
         morseCodeMap.put('B', "-...");
         morseCodeMap.put('C', "-.-.");
@@ -45,10 +29,33 @@ public class Code {
         morseCodeMap.put('T', "-");
         morseCodeMap.put('U', "..-");
         morseCodeMap.put('V', "...-");
-        morseCodeMap.put('W' , ".--");
-        morseCodeMap.put('X' , "-..-");
-        morseCodeMap.put('Y' , "-.--");
-        morseCodeMap.put('Z' , "--..");
+        morseCodeMap.put('W', ".--");
+        morseCodeMap.put('X', "-..-");
+        morseCodeMap.put('Y', "-.--");
+        morseCodeMap.put('Z', "--..");
+    }
+
+    public static String get(String text) {
+        if (text == null) {
+            return "Input cannot be null.";
+        }
+
+        StringBuilder morse = new StringBuilder();
+        text = text.toUpperCase(); // Convert input to uppercase
+
+        for (char c : text.toCharArray()) {
+            if (c == ' ') {
+                morse.append("/"); // Word separator
+            } else if (morseCodeMap.containsKey(c)) {
+                if (morse.length() > 0) {
+                    morse.append(" "); // Add space between letters
+                }
+                morse.append(morseCodeMap.get(c));
+            } else {
+                return "Please write characters A-Z"; // Return error for invalid input
+            }
+        }
+        return morse.toString(); // Return full Morse code string
+    }
 }
 
- */

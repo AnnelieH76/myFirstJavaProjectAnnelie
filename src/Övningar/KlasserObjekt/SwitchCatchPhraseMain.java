@@ -1,10 +1,10 @@
 package Övningar.KlasserObjekt;
 
-public class SwitchMetodMain {
+public class SwitchCatchPhraseMain {
 
     public static void main(String[] args) {
 
-        SwitchMetod use = new SwitchMetod();
+        SwitchCatchPhrase use = new SwitchCatchPhrase();
         use.catchPhrase(8);
 
     }

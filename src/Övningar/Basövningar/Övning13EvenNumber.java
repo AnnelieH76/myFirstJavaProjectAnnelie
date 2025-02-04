@@ -1,6 +1,6 @@
 package Övningar.Basövningar;
 
-public class Övning13
+public class Övning13EvenNumber
 {
     public static void main(String[] args)
     //Skapa ett program som läser in ett tal och skriver ut om det är jämnt.

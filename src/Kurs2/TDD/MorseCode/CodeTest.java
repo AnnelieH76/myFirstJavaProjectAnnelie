@@ -5,49 +5,41 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CodeTest {
 
-
     @Test
-    void M() {
-        Code code = new Code();
+    void testGetM() {
         String expected = "--";
-        String actual = code.getMorseCode('M');  // Metoden heter???
+        String actual = Code.get("M");
         assertEquals(expected, actual);
     }
 
-/*
     @Test
-    void A B C() {
-        Code code = new Code(A B C);
+    void testGetABC() {
+        //Code code = new Code(ABC);
         String expected = ".- -... -.-.";
-        String actual = (char) hashCode(ABC);
+        String actual = Code.get("ABC");
         assertEquals(expected, actual);
     }
 
     @Test
     void THANKYOU() {
-        Code code = new Code(THANK YOU);
-        String expected = "- .... .- -. -.- -.-- --- ..-";
-        String actual = code.     ();
+        String expected = "- .... .- -. -.-/ -.-- --- ..-";
+        String actual = Code.get("THANK YOU");
         assertEquals(expected, actual);
     }
 
     @Test
-    void 123() {
-        Code code = new Code(123);
+    void testNumbers() {
+        //Code code = new Code(123);
         String expected = "Please write characters A-Z";
-        String actual = code.     ();
+        String actual = Code.get("123");
         assertEquals(expected, actual);
     }
 
     @Test
-    void @() {
-        Code code = new Code(@);
-        String expected = "Please write characters A-Z";
-        String actual = code.     ();
+    void testNull() {
+        //Code code = new Code();
+        String expected = "Input cannot be null.";
+        String actual = Code.get(null);
         assertEquals(expected, actual);
     }
-
- */
 }
-
-

@@ -1,4 +1,4 @@
-package Kurs2.TDD.Övningar;
+package Kurs2.TDD.TryCatch;
 
 import java.util.Scanner;
 
