@@ -5,7 +5,7 @@ public class Huvudklassen {
     //Utan static är variabler unika för varje objekt av klassen.
     public int aPublic = 0; // Överallt
     private int aPrivate = 1; // Bara inom denna klass. Nås från andra klasser med getter-metod.
-    int aNothing = 2; // (Utan modifier) Inom samma package (men ej i subclass).
+    int aNothing = 2; // (Utan modifier) Inom samma package.
     protected int aProtected = 3; // Inom samma package + subklasser (även utanför package)
 
 
