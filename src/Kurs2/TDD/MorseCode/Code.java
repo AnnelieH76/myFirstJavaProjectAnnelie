@@ -1,10 +1,9 @@
 package Kurs2.TDD.MorseCode;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Code {
-    private static final Map<Character, String> morseCodeMap = new HashMap<>();
+    private static final HashMap<Character, String> morseCodeMap = new HashMap<>();
 
     static {
         morseCodeMap.put('A', ".-");
@@ -35,7 +34,7 @@ public class Code {
         morseCodeMap.put('Z', "--..");
     }
 
-    public static String get(String text) {
+    public static String getMorseCode(String text) {
         if (text == null) {
             return "Input cannot be null.";
         }

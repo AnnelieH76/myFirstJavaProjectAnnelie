@@ -1,5 +1,7 @@
 package Kurs2.TDD.HashMap;
 
+import Övningar.Basövningar.Övning3JämtDelbart;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -24,13 +26,13 @@ public class Simpsons {
 
 
         System.out.println(simpsons.get(name));
+
         System.out.println(simpsons.get("Marge"));
 
-        /* Skriva ut alla karaktärer och deras catchphrases
+        //Skriva ut alla karaktärer och deras catchphrases
         for (String character : simpsons.keySet()) {
             System.out.println(character + ": \"" + simpsons.get(character) + "\"");
-        }*/
-
+        }
 
     }
 }

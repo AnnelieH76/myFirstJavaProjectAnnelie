@@ -8,7 +8,7 @@ public class CodeTest {
     @Test
     void testGetM() {
         String expected = "--";
-        String actual = Code.get("M");
+        String actual = Code.getMorseCode("M");
         assertEquals(expected, actual);
     }
 
@@ -16,14 +16,14 @@ public class CodeTest {
     void testGetABC() {
         //Code code = new Code(ABC);
         String expected = ".- -... -.-.";
-        String actual = Code.get("ABC");
+        String actual = Code.getMorseCode("ABC");
         assertEquals(expected, actual);
     }
 
     @Test
-    void THANKYOU() {
+    void THANK_YOU() {
         String expected = "- .... .- -. -.-/ -.-- --- ..-";
-        String actual = Code.get("THANK YOU");
+        String actual = Code.getMorseCode("THANK YOU");
         assertEquals(expected, actual);
     }
 
@@ -31,7 +31,7 @@ public class CodeTest {
     void testNumbers() {
         //Code code = new Code(123);
         String expected = "Please write characters A-Z";
-        String actual = Code.get("123");
+        String actual = Code.getMorseCode("123");
         assertEquals(expected, actual);
     }
 
@@ -39,7 +39,7 @@ public class CodeTest {
     void testNull() {
         //Code code = new Code();
         String expected = "Input cannot be null.";
-        String actual = Code.get(null);
+        String actual = Code.getMorseCode(null);
         assertEquals(expected, actual);
     }
 }

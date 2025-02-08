@@ -9,7 +9,7 @@ public class UserMain {
         String input;
         Scanner scanner = new Scanner(System.in);
         do {
-            System.out.print("Skriv in username och password med blanksteg mellan eller stop ");
+            System.out.print("Skriv in username och password med blanksteg mellan, eller avsluta med ordet 'stop'.");
             input = scanner.nextLine();
             // System.out.println(input);
             String[] userArray = input.split(" ");
