@@ -26,8 +26,10 @@ public class Simpsons {
 
 
         System.out.println(simpsons.get(name));
+        //Skriver ut frasen för namnet du skrev in
 
         System.out.println(simpsons.get("Marge"));
+        //Skriver ut Marges fras
 
         //Skriva ut alla karaktärer och deras catchphrases
         for (String character : simpsons.keySet()) {
